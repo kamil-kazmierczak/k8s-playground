@@ -1,19 +1,28 @@
-minikube version
-minikube start
+Minikube for local kubernetes cluster:
+  - `minikube version`
+  - `minikube start`
+  - `minikube dashboard`
 
-kubectl get nodes
-kubectl get pods
-kubectl get deployments
-kubectl get services
+Kubectl commands:
+  - `kubectl get nodes`
+  - `kubectl get pods`
+  - `kubectl get deployments`
+  - `kubectl get services`
 
-kubectl get pods -l app=hello
+Get pods by label:
+  - `kubectl get pods -l app=hello`
 
-kubectl apply -f pod.yaml
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
+Apply config from file:
+  - `kubectl apply -f pod.yaml`
+  - `kubectl apply -f deployment.yaml`
+  - `kubectl apply -f service.yaml`
 
-kubectl exec -it curl-pod.yaml
-curl hello-service
+Get into shell of running pod (interactive mode):
+  - `kubectl exec -it curl-pod.yaml -- sh`
+
+Other commands:
+  - `curl hello-service`
+
 
 
 
